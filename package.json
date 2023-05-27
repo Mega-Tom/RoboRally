@@ -1,0 +1,15 @@
+{
+  "name": "roborally",
+  "version": "1.0.0",
+  "description": "roborally board game",
+  "main": "main.js",
+  "scripts": {
+    "build": "node_modules/typescript/bin/tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Thomas Peck",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.4"
+  }
+}
