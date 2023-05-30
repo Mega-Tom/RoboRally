@@ -24,14 +24,24 @@ function initBoard(){
 }
 
 function drawBoard(context: CanvasRenderingContext2D){
-    context.strokeStyle = 'red';
-    context.fillStyle = 'gray';
     for(let i = 0; i < 10; i++){
         for(let j = 0; j < 10; j++){
+            context.strokeStyle = 'white';
+            context.fillStyle = 'gray';
             context.beginPath();
-            context.rect(i*50+3, j*50+3, 45, 45);
+            context.rect(i*50 + 3, j*50 + 3, 44, 44);
             context.fill();
             context.stroke();
+
+            context.strokeStyle = 'blue';
+            context.fillStyle = 'yellow';
+            context.beginPath();
+            context.moveTo(i*50+25, j*50+10);
+            context.lineTo(i*50+40, j*50+25);
+            context.lineTo(i*50+10, j*50+25);
+            context.lineTo(i*50+25, j*50+10);
+            context.stroke();
+            context.fill();
         }
     }
 }
